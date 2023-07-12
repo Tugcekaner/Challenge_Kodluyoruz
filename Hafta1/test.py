@@ -35,14 +35,14 @@
 # *içinden sayılar seçip toplayarak hedef sayıya ulaşmasını sağlamalısın. Farklı farklı kombinasyonlar ile 
 # *hedef sayıya ulaşıyor olman burada çok önemli!
 
-# numbers = []
-# for i in range(100):
-#     numbers.append(i)
+numbers = []
+for i in range(100):
+    numbers.append(i)
 
-# say = int(input("Hedef sayıyı giriniz :"))
-# if say<=0:
-#     say = int(input("Yanlış bir sayı girdiniz.0'dan büyük bir sayı giriniz :"))
-#     for i in numbers:
-#         say2 = say-numbers[i]
-#         if say2 in numbers:
-#             print(f"{numbers[i]} + {say2} = {say} ")
+say = int(input("Hedef sayıyı giriniz :"))
+if say<=0:
+    say = int(input("Yanlış bir sayı girdiniz.0'dan büyük bir sayı giriniz :"))
+for i in numbers:
+    say2 = say-numbers[i]
+    if say2 in numbers:
+        print(f"{numbers[i]} + {say2} = {say} ")
