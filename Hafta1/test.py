@@ -2,14 +2,14 @@
 # !Easy: 
 # *Kullanıcının doğum tarihini alarak kaç yaşında olduğunu bulan bir algoritma yazmanızı istiyorum.
 
-# import datetime
+import datetime
 
-# today = datetime.datetime.now()
-# year = today.year
+today = datetime.datetime.now()
+year = today.year
 
-# birthyear = int(input("Doğum tarihinizi giriniz :"))
-# age = year - birthyear
-# print(f"Yaşınız : {age}")
+birthyear = int(input("Doğum tarihinizi giriniz :"))
+age = year - birthyear
+print(f"Yaşınız : {age}")
 
 
 
@@ -17,16 +17,16 @@
 # *Kullanıcıdan bir metin almanızı istiyorum. Bu metnin içindeki en çok tekrar eden harfi bulmalı ve 
 # *kaç kere tekrar ettiğini göstermeli.
 
-# text = input("Bir metin giriniz :")
+text = input("Bir metin giriniz :")
 
-# letterNumbers = {}
-# for letter in text:
-#     letterNumbers[letter] = text.count(letter)
+letterNumbers = {}
+for letter in text:
+    letterNumbers[letter] = text.count(letter)
 
-# mostManyRepeatedLetter = max(letterNumbers, key=letterNumbers.get)
-# mostManyRepeats = letterNumbers[mostManyRepeatedLetter]
+mostManyRepeatedLetter = max(letterNumbers, key=letterNumbers.get)
+mostManyRepeats = letterNumbers[mostManyRepeatedLetter]
 
-# print(f"Girilen {text} metninde en çok tekrar edilen harf : {mostManyRepeatedLetter}\nTekrar sayısı: {mostManyRepeats}")
+print(f"Girilen {text} metninde en çok tekrar edilen harf : {mostManyRepeatedLetter}\nTekrar sayısı: {mostManyRepeats}")
 
 
 
